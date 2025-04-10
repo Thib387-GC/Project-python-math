@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51A19106-FE2D-4316-AA1F-E04D660E052C}|Projet2\\Projet2.pyproj|C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{51A19106-FE2D-4316-AA1F-E04D660E052C}|Projet2\\Projet2.pyproj|solutionrelative:Projet2\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51A19106-FE2D-4316-AA1F-E04D660E052C}|Projet2\\Projet2.pyproj|C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\Projet2.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{51A19106-FE2D-4316-AA1F-E04D660E052C}|Projet2\\Projet2.pyproj|solutionrelative:Projet2\\Projet2.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51A19106-FE2D-4316-AA1F-E04D660E052C}|Projet2\\Projet2.pyproj|C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\TP1.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{51A19106-FE2D-4316-AA1F-E04D660E052C}|Projet2\\Projet2.pyproj|solutionrelative:Projet2\\TP1.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TP1.py",
+              "DocumentMoniker": "C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\TP1.py",
+              "RelativeDocumentMoniker": "Projet2\\TP1.py",
+              "ToolTip": "C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\TP1.py",
+              "RelativeToolTip": "Projet2\\TP1.py",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-10T11:03:26.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Projet2.py",
+              "DocumentMoniker": "C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\Projet2.py",
+              "RelativeDocumentMoniker": "Projet2\\Projet2.py",
+              "ToolTip": "C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\Projet2.py",
+              "RelativeToolTip": "Projet2\\Projet2.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-10T11:03:24.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.py",
+              "DocumentMoniker": "C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\main.py",
+              "RelativeDocumentMoniker": "Projet2\\main.py",
+              "ToolTip": "C:\\Users\\thody\\Documents\\GitHub\\Project-python-math\\Projet2\\main.py*",
+              "RelativeToolTip": "Projet2\\main.py*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-10T11:03:24.179Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

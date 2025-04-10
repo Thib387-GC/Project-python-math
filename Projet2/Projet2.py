@@ -1,6 +1,5 @@
 
-from encodings import normalize_encoding
-from math import sqrt
+
 import matplotlib.pyplot as plt
 
 import TP1 as TP

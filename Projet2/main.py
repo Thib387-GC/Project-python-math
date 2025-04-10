@@ -1,8 +1,7 @@
    
 #TP2 Math
+    
 
-
-from re import I
 import matplotlib.pyplot as plt
 
 import TP1 as t
@@ -77,3 +76,32 @@ def Question3():
 #question 4
 
 
+def carre(n,xmin,ymin,a):
+    r=int(n**(1/2))
+    dx=(a-xmin)/(r+1)
+    dy=(a-ymin)/(r+1)
+    W=[]
+    for i in range(r+1):
+        for j in range(r+1):
+            x=xmin+dx*i
+            y=ymin+dy*j
+            W.append([x,y,-2*x+y+3])
+    return(transpose(W))
+
+#question 5
+
+def cube(n,xmin,ymin,a):
+    r=int(n**(1/2))
+    dx=(a-xmin)/(r+1)
+    dy=(a-ymin)/(r+1)
+    W=[]
+    for i in range(r+1):
+        for h in range(r+1):
+            for j in range(r+1):
+                x=xmin+dx*h
+                y=ymin+dy*j
+                W.append([x,y+i,-2*x+y+3])
+    return(transpose(W))
+
+
+                
