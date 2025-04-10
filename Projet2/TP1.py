@@ -22,7 +22,7 @@ def prodscal_vect(u,v):
     
     a = 0
     for i in range(len(u)):
-        a+= u[i] * v[i]
+        a+=  u[i] * v[i]
     
     return a
    
@@ -54,7 +54,7 @@ def somme_mat(A,B):
     C = []
 
     for i in range(len(A)):
-        C.append([somme_vect(A[i], B[i])])
+        C.append(somme_vect(A[i], B[i]))
     
     return C
 M=[[1,2,3],[4,5,6],[4,5,6]]

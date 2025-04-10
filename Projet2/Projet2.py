@@ -1,5 +1,6 @@
 
 
+from turtle import color
 import matplotlib.pyplot as plt
 
 import TP1 as TP
@@ -61,21 +62,41 @@ def mat_projection(n,d):
 
     return MP
 
+def mat_projection2(n,d):
+    
 
+    MP = [ [1- ((n[0]*d[0])/TP.prodscal_vect(d,n)),-((n[1]*d[0])/TP.prodscal_vect(d,n)),- ((n[2]*d[0])/TP.prodscal_vect(d,n))],
+         [- ((n[0]*d[1])/TP.prodscal_vect(d,n)),1- ((n[1]*d[1])/TP.prodscal_vect(d,n)),- ((n[2]*d[1])/TP.prodscal_vect(d,n))],
+         [- ((n[0]*d[2])/TP.prodscal_vect(d,n)),- ((n[1]*d[2])/TP.prodscal_vect(d,n)),1- ((n[2]*d[2])/TP.prodscal_vect(d,n))]]
 
+    return MP
 
+def projection(n,d,d1,A):
+    LP =  mat_projection2(n,d)
+    
+    T = [d1/n[0],0,0]
+
+    InvI3 = [[-1,0,0],[0,-1,0],[0,0,-1]]
+
+    AP = TP.prod_mat_vect( TP.somme_mat(LP,InvI3 ),T )
+
+    A1 = TP.somme_vect(TP.prod_mat_vect(LP,A),AP)
+    return A1
 
 (X,Y,Z)=montagne(10000,-6,6,-4,4)
 (X1,Y1,Z1)=nuage(10000,-2,2,-2,2)
 
+(X2,Y2,Z2) = projection([0.5,-0.3,-1.0],[-5.0,-5.0,-6.0],8.0,[0.0,0.0,8.0])
+
+
 plt.figure(" Ombre d'un nuage ")
 axes = plt.axes(projection= "3d")
 print(axes, type(axes))
-print(mat_projection([1,-2,0],[1,0,1]))
 
 # Trace les listes en 3D
 axes.plot(X,Y,Z)
 axes.plot(X1,Y1,Z1)
+axes.plot(X2,Y2,Z2,color="Black")
 
 # Ajoute des étiquettes pour les axes
 axes.set_xlabel("X")
