@@ -1,6 +1,5 @@
 
 
-from turtle import color
 import matplotlib.pyplot as plt
 
 import TP1 as TP
@@ -83,10 +82,27 @@ def projection(n,d,d1,A):
     A1 = TP.somme_vect(TP.prod_mat_vect(LP,A),AP)
     return A1
 
+def ombre(n,d1,S,W):
+    W1 = [[],[],[]]
+    for i in range (len (W[0])):
+        tmp = projection(n,[-5.0,-5.0,-6.0],d1,[W[0][i],W[1][i],W[2][i]])
+        W1[0].append(tmp[0])
+        W1[1].append(tmp[1])
+        W1[2].append(tmp[2])
+
+    return W1
+
+
+(Sx,Sy,Sz) = [10,10,20]
+
 (X,Y,Z)=montagne(10000,-6,6,-4,4)
 (X1,Y1,Z1)=nuage(10000,-2,2,-2,2)
 
 (X2,Y2,Z2) = projection([0.5,-0.3,-1.0],[-5.0,-5.0,-6.0],8.0,[0.0,0.0,8.0])
+
+(X3,Y3,Z3) = projection([0.5,-0.3,-1.0],[-5.0,-5.0,-6.0],1.0,[0.0,0.0,8.0])
+
+(X4,Y4,Z4) =ombre([0.5,-0.3,-1.0],1.0, [10,10,20],[X1,Y1,Z1])
 
 
 plt.figure(" Ombre d'un nuage ")
@@ -94,9 +110,16 @@ axes = plt.axes(projection= "3d")
 print(axes, type(axes))
 
 # Trace les listes en 3D
+axes.scatter(Sx, Sy, Sz, color="yellow", s=500)  # 's' définit la taille du point
+
+
+
 axes.plot(X,Y,Z)
+axes.plot(X4,Y4,Z4, color="black", alpha=0.5)
+
 axes.plot(X1,Y1,Z1)
-axes.plot(X2,Y2,Z2,color="Black")
+axes.scatter(X2, Y2, Z2, color="red", s=100)  # 's' définit la taille du point
+axes.scatter(X3, Y3, Z3, color="green", s=100)  # 's' définit la taille du point
 
 # Ajoute des étiquettes pour les axes
 axes.set_xlabel("X")
