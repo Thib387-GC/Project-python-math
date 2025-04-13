@@ -104,4 +104,22 @@ def cube(n,xmin,ymin,a):
     return(transpose(W))
 
 
-                
+def fact(n):
+    if n==0 :
+        return(1)
+    else:
+        return(n*fact(n-1))
+
+"Approximation de cos"
+def cos(x):
+    s=0
+    for i in range (10):
+        s+=(-1)**i*x**(2*i)/fact(2*i)
+    return(s)
+
+"Approximation de sin"
+def sin(x):
+    s=0
+    for i in range (10):   
+        s+=(-1)**i*x**(2*i+1)/fact(2*i+1)
+    return(s)

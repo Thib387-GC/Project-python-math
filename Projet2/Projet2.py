@@ -85,13 +85,14 @@ def projection(n,d,d1,A):
 def ombre(n,d1,S,W):
     W1 = [[],[],[]]
     for i in range (len (W[0])):
-        tmp = projection(n,[-5.0,-5.0,-6.0],d1,[W[0][i],W[1][i],W[2][i]])
+        tmp = projection(n,[-5,-5,-6],d1,[W[0][i],W[1][i],W[2][i]])
         W1[0].append(tmp[0])
         W1[1].append(tmp[1])
         W1[2].append(tmp[2])
 
     return W1
 
+#S[0]-W[0][i],S[1]-W[1][i], S[2]-W[2][i]
 
 (Sx,Sy,Sz) = [10,10,20]
 
@@ -102,7 +103,7 @@ def ombre(n,d1,S,W):
 
 (X3,Y3,Z3) = projection([0.5,-0.3,-1.0],[-5.0,-5.0,-6.0],1.0,[0.0,0.0,8.0])
 
-(X4,Y4,Z4) =ombre([0.5,-0.3,-1.0],1.0, [10,10,20],[X1,Y1,Z1])
+(X4,Y4,Z4) =ombre([0.5,-0.3,-1.0],1.0, [Sx,Sy,Sz],[X1,Y1,Z1])
 
 
 plt.figure(" Ombre d'un nuage ")
