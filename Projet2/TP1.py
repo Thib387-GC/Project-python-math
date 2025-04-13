@@ -10,11 +10,7 @@ def somme_vect(u,v):
     
     return W
 
-a = [0,1,10]
 
-b = [15,10,-10]
-
-print(somme_vect(a,b))
 
 # Question 4
 
@@ -27,11 +23,6 @@ def prodscal_vect(u,v):
     return a
    
 
-a = [0,1,0]
-
-b = [41,0,480]
-
-print(prodscal_vect(a,b))
 
 # Question 5
 
@@ -47,7 +38,6 @@ def identite(n):
 
     return IdN
 
-print(identite(3))
 
 # Question 6
 def somme_mat(A,B):
@@ -60,7 +50,6 @@ def somme_mat(A,B):
 M=[[1,2,3],[4,5,6],[4,5,6]]
 M2=[[1,2,3],[4,5,6],[4,5,6]]
 
-print(somme_mat(M,M2))
 
 # Question 7
 def prod_mat_vect(A,u):
@@ -72,9 +61,7 @@ def prod_mat_vect(A,u):
 
     return v
 
-M=[[1,2,3],[4,5,6],[4,5,6]]
 
-print(prod_mat_vect(M,a))
 
 # Question 8
 
@@ -101,10 +88,6 @@ def prod_vect(A,B):
     return C
 
 
-M=[[1,2,3],[4,5,6],[4,5,6]]
-
-M2=[[1,2,3],[4,5,6],[4,5,6]]
-print(prod_mat_mat(M,M2))
 
 
 
