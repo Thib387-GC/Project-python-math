@@ -165,7 +165,6 @@ def ombre(n,d1,S,W):
         W2[2].append(tmp1[2])
     return W2,N,N1
 
-#S[0]-W[0][i],S[1]-W[1][i], S[2]-W[2][i]
 def update(val): 
     Sx = slider_sx.val
     Sy = slider_sy.val
@@ -224,7 +223,7 @@ plt.subplots_adjust(bottom=0.25)
 axes = plt.axes(projection= "3d")
 
 # Trace les listes en 3D
-soleil  = axes.scatter(Sx, Sy, Sz, color="yellow", s=500)  # 's' définit la taille du point
+soleil  = axes.scatter(Sx, Sy, Sz, color="yellow", s=500)  
 
 # Axes labels
 ax.set_xlabel("X")
@@ -249,15 +248,13 @@ axes.plot(X,Y,Z)
 ombre_line, = axes.plot(X4,Y4,Z4, color="black", alpha=0.5)
 
 nuage, = axes.plot(X1,Y1,Z1)
-ombre_pt1 = axes.scatter(X2, Y2, Z2, color="red", s=100)  # 's' définit la taille du point
-ombre_pt2 =axes.scatter(X3, Y3, Z3, color="green", s=100)  # 's' définit la taille du point
+ombre_pt1 = axes.scatter(X2, Y2, Z2, color="red", s=100) 
+ombre_pt2 =axes.scatter(X3, Y3, Z3, color="green", s=100) 
 
 
 
 
 
-
-# Ajoute des étiquettes pour les axes
 axes.set_xlabel("X")
 axes.set_ylabel("Y" )
 axes.set_zlabel("Z")
